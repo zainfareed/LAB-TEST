@@ -89,7 +89,7 @@ double dataSize(int time)
 
 int main(int argc, char const *argv[]) {
 
-   int quality;
+   int quality, bytes;
 
  audioClip Hello;
 
@@ -108,6 +108,9 @@ int main(int argc, char const *argv[]) {
  {
    std::cout << "Your Audio do not have maximum quality" << '\n';
  }
+ bytes =  Hello.dataSize(2);     // giving the time of audio clip
+ cout<<"Your Audio Clip size is "<<bytes<<" bytes"<<endl;
+
 
 
   return 0;
